@@ -188,6 +188,24 @@
     align-items: center;
 }
 
+/* CIRCLES */
+.circle {
+    height: 30vh;
+    width: 30vh;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.circle1 {
+    position: absolute;
+    right: 85vw;
+}
+
+.circle2 {
+    position: absolute;
+    left: 85vw;
+    top: 67vh;
+}
 
 /* COLOR INTERACTIVITY */
 .c1 {
