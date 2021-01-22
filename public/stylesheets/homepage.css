@@ -1,0 +1,200 @@
+body
+{
+	background-color: #800000;
+}
+.warning1{
+	color: #800000;
+	font-size: 0px;
+}
+.warning2{
+	color: #800000;
+	font-size: 0px;
+}
+@media only screen and (max-width: 1900px) {
+	.warning1{
+		color: #ffffff;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 1940px) {
+	.warning2{
+		color: #ffffff;
+		font-size: 30px;
+	}
+}
+
+.container {
+	float: left;
+	background-color: #313131;
+	margin-left: 2%;
+	margin-top: 0.2%;
+	width: 1800px;
+	border-radius: 35px;
+
+}
+.left {
+	float: left;
+	background-color: #D3D3D3;
+	border-radius: 35px;
+	margin-left: 2%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 850px;
+	height: 900px;
+
+}	
+.right {
+	background-color: #D3D3D3;
+	float: right;
+	margin-right: 2%;
+	width: 850px;
+	height: 900px;
+	border-radius: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.image {
+	float: left;
+	width: 370px;
+}
+.controls {
+	float: right;
+	margin-top: 8%;
+	width: 350px;
+}
+.login {
+	width: 300px;
+	margin-left: 20px;
+	background-color: #111111;
+	border-radius: 35px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 35px;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "arial";
+	position:absolute;
+}
+.title {
+	
+	background-color: #696969;
+	margin-bottom: 10%;
+	margin-left: 5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 730px;
+	border-radius: 35px;
+}
+
+.textholder {
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	height: 750px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #797979;
+	border-radius: 35px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "arial";
+}
+.guidetitle {
+	float: left;
+	margin-left: 30%;
+	
+}
+h2 {
+	font-weight: bold;
+	
+}
+.filler {
+	float: left;
+	background-color: #696969;
+	border-radius: 35px;
+	height: 650px;
+	width: 80px;
+	margin-right: 30px;
+}
+.example {
+	display: inline-grid;
+	grid-template-columns:  auto auto auto auto auto;
+	background-color: #696969;
+	padding: 10px;
+	width: 300px
+}
+.pins {
+	display: inline-grid;
+	grid-template-columns:  auto auto;
+	background-color: #696969;
+	padding: 3px;
+	
+}
+.raster-item {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #000000;
+
+}
+.small-raster-item {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border: 1px solid #000000;
+}
+.redorb {
+	background-color: red;
+	height: 50px;
+	border-radius: 25px;
+}
+.greenorb {
+	background-color: green;
+	height: 50px;
+	border-radius: 25px;
+}
+.yelloworb {
+	background-color: orange;
+	height: 50px;
+	border-radius: 25px;
+}
+.redpin {
+	background-color: red;
+	height: 20px;
+	border-radius: 10px;
+	color: red;
+	
+}
+.whitepin {
+	background-color: white;
+	height: 20px;
+	border-radius: 10px;
+	
+}
+h1::after {
+	content: " to get started";
+}
+h2::before {
+	content: "[";
+}
+h2::after {
+	content: "]";
+}
+.example:hover {
+	animation: growsize 1s;
+	width: 450px;
+	height: 200px;
+}
+@keyframes growsize {
+	from {width: 300px; height: 100px;}
+	to {width: 450px; height: 200px;}
+
+}
+.playbutton:active {
+	background-color: red;
+}
