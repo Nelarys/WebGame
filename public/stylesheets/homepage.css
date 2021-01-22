@@ -10,14 +10,14 @@ body
 	color: #800000;
 	font-size: 0px;
 }
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1600px) {
 	.warning1{
 		color: #ffffff;
 		font-size: 20px;
 	}
 }
 
-@media only screen and (min-width: 1940px) {
+@media only screen and (min-width: 2200px) {
 	.warning2{
 		color: #ffffff;
 		font-size: 30px;
@@ -29,8 +29,9 @@ body
 	background-color: #313131;
 	margin-left: 2%;
 	margin-top: 0.2%;
-	width: 1800px;
+	width: 96%;
 	border-radius: 35px;
+	height: 98%
 
 }
 .left {
@@ -40,19 +41,20 @@ body
 	margin-left: 2%;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 850px;
-	height: 900px;
+	width: 47%;
+	height: 98%;
 
 }	
 .right {
 	background-color: #D3D3D3;
 	float: right;
 	margin-right: 2%;
-	width: 850px;
-	height: 900px;
+	width: 47%;
+	height: 99%;
 	border-radius: 35px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding-bottom: 2%
 }
 .image {
 	float: left;
@@ -82,8 +84,8 @@ body
 	background-color: #696969;
 	margin-bottom: 10%;
 	margin-left: 5%;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 	padding-left: 20px;
 	padding-right: 20px;
 	width: 730px;
@@ -198,3 +200,4 @@ h2::after {
 .playbutton:active {
 	background-color: red;
 }
+
