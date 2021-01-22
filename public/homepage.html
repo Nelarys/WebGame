@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>play mastermind!</title>
+		<link rel="stylesheet" href="homepage.css">
+	</head>
+	<body>
+		<p class="warning1">this browser is too small</p>
+		<p class="warning2">this browser is too large</p>
+		<div class ="container">
+			<div class="left">
+				<div class="image">
+					<img src="mastermindicon.png" alt="O_O">
+					<br />
+					
+					<div class="title">
+						<h2>MASTERMIND</h2>
+					</div>
+				</div>
+				
+				
+				<div class="controls">
+					<div class="filler">
+					</div>
+				
+					<div class="login">
+						<form>
+							<label for="name">Name: </label><br />
+							<input type="text" id="name" name="name">
+							<br />
+							<label for="roomno">Room number: </label><br />
+							<input type="text" id="roomno" name="name">
+							<br />
+							<input type="submit" value="find room" class="playbutton">
+							<br />
+							<button type="button" onclick="document.location='mastermind.html'" class="playbutton">PLAY</button>
+						</form>
+					</div>
+					
+
+				</div>
+				
+				
+			</div>
+			<div class="right">
+				<div class="guidetitle">
+					<h1>Quick Guide</h1>
+				</div>
+				<div class ="textholder">
+					<h2>How to play Mastermind:</h2>
+					<br />
+					<p>Mastermind has two roles, the role of the codebreaker and the role of the codemaker. The codemaker makes a code of colored orbs, while the codebreaker tries to guess said code by proposing his own code of colored orbs. After each guess by the codebreaker, the codemaker sets pins for each correct sphere. For each white pin that is set, there is one sphere with the right color. For each red pin that is set, there is a sphere with the right color and place. The codemaker can use this to adjust their guess every round and (hopefully) crack the code.</p>
+					<br />
+					<h2>example:</h2>
+					<br />
+					<div class="example">
+						<div class="raster-item"><div class="redorb">o</div></div>
+						<div class="raster-item"><div class="greenorb">o</div></div>
+						<div class="raster-item"><div class="redorb">o</div></div>
+						<div class="raster-item"><div class="redorb">o</div></div>
+						<div class="raster-item"><div class="pins">
+							<div class="small-raster-item"><div class="redpin">o</div></div>
+							<div class="small-raster-item"><div class="redpin">o</div></div>
+							<div class="small-raster-item"><div class="whitepin">o</div></div>
+						</div></div>
+						<div class="raster-item"><div class="greenorb">o</div></div>
+						<div class="raster-item"><div class="yelloworb">o</div></div>
+						<div class="raster-item"><div class="redorb">o</div></div>
+						<div class="raster-item"><div class="redorb">o</div></div>
+						<div class="raster-item"><div class="pins">
+							<div class="small-raster-item"><div class="redpin">o</div></div>
+							<div class="small-raster-item"><div class="redpin">o</div></div>
+							<div class="small-raster-item"><div class="redpin">o</div></div>
+						</div></div>
+					</div>
+					<br />
+					<p class="extratext">the white pins indicate a correct color, while the red pins indicate a correct color AND location</p>
+				</div>
+			</div>
+		</div>
+	</body
+</html>
