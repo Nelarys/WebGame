@@ -1,0 +1,239 @@
+/* CSS FOR THE GAMESCREEN */
+
+.centerBox {
+    /* STYLE */
+    background-color: #a9a9a9;
+    border-radius: 50px;
+    padding: 25px;
+
+    /* GRID */
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-columns: 5fr 0.5fr 2fr;
+    grid-row-gap: 7px;
+    grid-column-gap: 7px;
+
+    /* POSITION IN THE CENTER */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* SIZE */
+    height: 75vh;
+    width: 60vw;
+}
+
+.guessField, .feedbackField {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* GUESSFIELD */
+.guessField {
+    background-color: #313131;
+    border-radius: 25px;
+}
+
+.guessField > div + div {
+    border-top: dashed #606060;
+}
+
+.guessField > div {
+    /* display: inline-block; */
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
+    height: 12.5%;
+    box-sizing: border-box;
+    
+}
+
+.guessField span {
+    /* SHAPE */
+    height: 10px;
+    width: 10px;
+    background-color: #606060;
+    border-radius: 50%;
+
+    margin: auto;
+}
+
+/* FEEDBACKFIELD */
+/* TODO MAKE THEM INVISIBLE INITIALLY */
+.feedbackField {
+    background-color: #606060;
+    border-radius: 25px;
+
+    /* padding: 5px; */
+}
+
+.feedbackField > div + div {
+    border-top: dashed #313131;
+}
+
+.feedbackField > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    box-sizing: border-box;
+    
+    height: 12.5%;
+    padding: 5px;
+
+}
+
+.feedbackField span {
+    margin: auto;
+}
+
+.fbDot {
+    /* SHAPE */
+    height: 7px;
+    width: 7px;
+    background-color: #313131;
+    border-radius: 50%;
+}
+
+/* COLORFIELD */
+.colorField {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    /* margin-top: 50%; */
+    margin-right: 50%;
+}
+
+.colorField button {
+    border-radius: 50%;
+    border-color: transparent;
+    margin: auto;
+}
+
+/* ANSWERFIELD */
+.answerField {
+    background-color: #606060;
+    border-radius: 25px;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.answerField span {
+    /* SHAPE */
+    height: 10px;
+    width: 10px;
+    background-color: #313131;
+    border-radius: 50%;
+
+    margin: auto
+    /* display: inline-block; */
+}
+
+
+/* SUBMIT */
+/* TODO MAKE BUTTON MORE INTERESTING */
+.submitField {
+    margin: auto auto auto 20%;
+}
+
+.submitField > button {
+    background-color: transparent;
+    width: 0; 
+    height: 0; 
+    border-right: 5px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    /* TODO CHANGE COLOR */
+    border-left: 30px solid green;
+    
+    /* color: transparent;  */
+}
+
+/* TODO MAKE BUTTON LAYERED */
+/* .submitField > button::after {
+    width: 0; 
+    height: 0; 
+    border-right: 5px solid transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 35px solid red;
+} */
+
+/* TIMER */
+.timerField {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.timer {
+    background-color: #597a43;
+    border: 2px solid #253418;
+    font-family: monospace;
+    height: 50%;
+    width: 50%;
+    
+    /* CENTER */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+/* COLOR INTERACTIVITY */
+.c1 {
+    background-color: red !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c2 {
+    background-color: green !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c3 {
+    background-color: yellow !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c4 {
+    background-color: blue !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c5 {
+    background-color: violet !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c6 {
+    background-color: blueviolet !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c7 {
+    background-color: orange !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.c8 {
+    background-color: limegreen !important;
+    height: 20px !important;
+    width: 20px !important;
+}

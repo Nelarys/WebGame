@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta charset="utf-8">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/game.css">
+
+    <!-- DELETE THIS! -->
+    <style>
+        .c1 {
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="centerBox">
+        <div class="guessField">
+            <div id="8row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="7row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="6row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="5row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="4row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="3row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="2row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+            <div id="1row">
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+                <span name="dot"></span>
+            </div>
+        </div>
+
+        <div class="feedbackField">
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+            <div>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+                <span></span>
+                <span class="fbDot"></span>
+            </div>
+        </div>
+
+        <div class="headerField">
+            <h1>Code Maker</h1>
+            <p>Make an unbreakable code!</p>
+        </div>
+
+        <div class="colorField">
+            <button class="c1"></button>
+            <button class="c2"></button>
+            <button class="c3"></button>
+            <button class="c4"></button>
+            <button class="c5"></button>
+            <button class="c6"></button>
+            <button class="c7"></button>
+            <button class="c8"></button>
+        </div>
+
+        <div class="answerField">
+            <span name="aDot"></span>
+            <span name="aDot"></span>
+            <span name="aDot"></span>
+            <span name="aDot"></span>
+            <span name="aDot"></span>
+        </div>
+
+        <div class="submitField">
+            <button name="submit"></button>
+        </div>
+
+        <div class="timerField">
+            <span class="timer">00:32</span>
+        </div>
+    </div>
+
+
+    <div class="Circle">circle</div>
+    <div class="Circle">circle</div>
+
+
+    <!-- SCRIPT -->
+    <script src="javascripts/script.js"></script>
+</body>
+
+</html>
